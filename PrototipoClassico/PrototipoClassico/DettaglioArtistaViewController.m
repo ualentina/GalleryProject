@@ -12,6 +12,9 @@
 
 @end
 
+
+
+
 @implementation DettaglioArtistaViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
