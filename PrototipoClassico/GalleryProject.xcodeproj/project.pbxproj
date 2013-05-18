@@ -73,7 +73,7 @@
 		A799C4B1173F01520096164B /* DettaglioOperaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DettaglioOperaViewController.m; sourceTree = "<group>"; };
 		A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DettaglioOperaViewController.xib; sourceTree = "<group>"; };
 		A799C4B5173F03B40096164B /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
-		A7D54F0C1747FF1A00917BBB /* 30secondsmars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 30secondsmars.jpg; path = "../../../Desktop/risorse varie/30secondsmars.jpg"; sourceTree = "<group>"; };
+		A7D54F0C1747FF1A00917BBB /* 30secondsmars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 30secondsmars.jpg; path = "../../Desktop/risorse varie/30secondsmars.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +95,7 @@
 		A799C463173EDF390096164B = {
 			isa = PBXGroup;
 			children = (
+				A7D54F0C1747FF1A00917BBB /* 30secondsmars.jpg */,
 				A799C475173EDF390096164B /* Versione1.0.0 */,
 				A799C46E173EDF390096164B /* Frameworks */,
 				A799C46D173EDF390096164B /* Products */,
@@ -185,7 +186,6 @@
 		A799C49F173EE6FF0096164B /* img */ = {
 			isa = PBXGroup;
 			children = (
-				A7D54F0C1747FF1A00917BBB /* 30secondsmars.jpg */,
 				A799C4B5173F03B40096164B /* download.jpeg */,
 				A799C4A0173EE7700096164B /* galleriahome.jpg */,
 			);
