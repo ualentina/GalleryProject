@@ -11,4 +11,5 @@
 @interface OpereViewController : UITableViewController
 //questo è l'elenco completo di tutte le opere
 @property (nonatomic,retain) NSMutableArray *data;
+@property (nonatomic,retain) NSMutableArray *datW;
 @end
