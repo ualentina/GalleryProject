@@ -33,6 +33,7 @@
 		A799C4B3173F01530096164B /* DettaglioOperaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A799C4B1173F01520096164B /* DettaglioOperaViewController.m */; };
 		A799C4B4173F01530096164B /* DettaglioOperaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */; };
 		A799C4B6173F03B50096164B /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A799C4B5173F03B40096164B /* download.jpeg */; };
+		A7D54F0D1747FF1A00917BBB /* 30secondsmars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7D54F0C1747FF1A00917BBB /* 30secondsmars.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		A799C4B1173F01520096164B /* DettaglioOperaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DettaglioOperaViewController.m; sourceTree = "<group>"; };
 		A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DettaglioOperaViewController.xib; sourceTree = "<group>"; };
 		A799C4B5173F03B40096164B /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		A7D54F0C1747FF1A00917BBB /* 30secondsmars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 30secondsmars.jpg; path = "../../../Desktop/risorse varie/30secondsmars.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,7 @@
 		A799C463173EDF390096164B = {
 			isa = PBXGroup;
 			children = (
-				A799C475173EDF390096164B /* PrototipoClassico */,
+				A799C475173EDF390096164B /* Versione1.0.0 */,
 				A799C46E173EDF390096164B /* Frameworks */,
 				A799C46D173EDF390096164B /* Products */,
 			);
@@ -119,7 +121,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A799C475173EDF390096164B /* PrototipoClassico */ = {
+		A799C475173EDF390096164B /* Versione1.0.0 */ = {
 			isa = PBXGroup;
 			children = (
 				A799C49F173EE6FF0096164B /* img */,
@@ -129,6 +131,7 @@
 				A799C47F173EDF390096164B /* AppDelegate.m */,
 				A799C476173EDF390096164B /* Supporting Files */,
 			);
+			name = Versione1.0.0;
 			path = PrototipoClassico;
 			sourceTree = "<group>";
 		};
@@ -182,6 +185,7 @@
 		A799C49F173EE6FF0096164B /* img */ = {
 			isa = PBXGroup;
 			children = (
+				A7D54F0C1747FF1A00917BBB /* 30secondsmars.jpg */,
 				A799C4B5173F03B40096164B /* download.jpeg */,
 				A799C4A0173EE7700096164B /* galleriahome.jpg */,
 			);
@@ -217,7 +221,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Valentina;
 			};
-			buildConfigurationList = A799C467173EDF390096164B /* Build configuration list for PBXProject "PrototipoClassico" */;
+			buildConfigurationList = A799C467173EDF390096164B /* Build configuration list for PBXProject "GalleryProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -252,6 +256,7 @@
 				A799C4AF173EFA620096164B /* DettaglioArtistaViewController.xib in Resources */,
 				A799C4B4173F01530096164B /* DettaglioOperaViewController.xib in Resources */,
 				A799C4B6173F03B50096164B /* download.jpeg in Resources */,
+				A7D54F0D1747FF1A00917BBB /* 30secondsmars.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A799C467173EDF390096164B /* Build configuration list for PBXProject "PrototipoClassico" */ = {
+		A799C467173EDF390096164B /* Build configuration list for PBXProject "GalleryProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A799C487173EDF390096164B /* Debug */,
