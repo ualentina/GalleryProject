@@ -1,18 +1,18 @@
 //
-//  OpereViewController.m
-//  PrototipoClassico
+//  EsposizioniViewController.m
+//  GalleryProject
 //
-//  Created by Valentina on 11/05/13.
+//  Created by Valentina on 20/05/13.
 //  Copyright (c) 2013 Valentina. All rights reserved.
 //
 
-#import "OpereViewController.h"
-#import "DettaglioOperaViewController.h"
-@interface OpereViewController ()
+#import "EsposizioniViewController.h"
+
+@interface EsposizioniViewController ()
 
 @end
 
-@implementation OpereViewController
+@implementation EsposizioniViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,19 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSMutableArray *tmp=[NSMutableArray array];
-    for(int i=0; i<30;i++)
-    {
-        [tmp addObject:[NSString stringWithFormat:@"opera %d",i]];
-        
-        
-    }
-    
-    self.data = tmp;
-    [tmp release];
-    [self.tableView reloadData];
-    
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -58,14 +46,14 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return self.data.count;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -77,12 +65,9 @@
     }
     
     // Configure the cell...
-    cell.textLabel.text=@"opere"; //(NSString *)[self.data objectAtIndex:indexPath.row];
     
     return cell;
 }
-
-
 
 /*
 // Override to support conditional editing of the table view.
@@ -135,11 +120,6 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-    DettaglioOperaViewController *detailOpera=[[DettaglioOperaViewController alloc] initWithNibName:@"DettaglioOperaViewController" bundle:nil];
-    [self.navigationController pushViewController:detailOpera animated:YES];
-    [detailOpera release];
-
-
 }
 
 @end

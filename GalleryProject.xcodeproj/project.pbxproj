@@ -34,6 +34,8 @@
 		A7A5208917481B4D007A4015 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A5208817481B4D007A4015 /* HomeViewController.m */; };
 		A7A5208B17481C6B007A4015 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7A5208A17481C6B007A4015 /* HomeViewController.xib */; };
 		A7A5208D17481E37007A4015 /* album30seconds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7A5208C17481E37007A4015 /* album30seconds.jpg */; };
+		A7C92682174A86E7009BB03B /* EsposizioniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C92680174A86E7009BB03B /* EsposizioniViewController.m */; };
+		A7C92683174A86E7009BB03B /* EsposizioniViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,9 @@
 		A7A5208817481B4D007A4015 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A7A5208A17481C6B007A4015 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A7A5208C17481E37007A4015 /* album30seconds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = album30seconds.jpg; sourceTree = "<group>"; };
+		A7C9267F174A86E7009BB03B /* EsposizioniViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EsposizioniViewController.h; sourceTree = "<group>"; };
+		A7C92680174A86E7009BB03B /* EsposizioniViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EsposizioniViewController.m; sourceTree = "<group>"; };
+		A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EsposizioniViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +169,8 @@
 				A799C496173EE4F50096164B /* InfoViewController.m */,
 				A799C49A173EE5190096164B /* ArtistiViewController.h */,
 				A799C49B173EE5190096164B /* ArtistiViewController.m */,
+				A7C9267F174A86E7009BB03B /* EsposizioniViewController.h */,
+				A7C92680174A86E7009BB03B /* EsposizioniViewController.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 		A799C494173EE4A00096164B /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */,
 				A7A5208A17481C6B007A4015 /* HomeViewController.xib */,
 				A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */,
 				A799C4AD173EFA620096164B /* DettaglioArtistaViewController.xib */,
@@ -257,6 +265,7 @@
 				A799C4B6173F03B50096164B /* download.jpeg in Resources */,
 				A7A5208B17481C6B007A4015 /* HomeViewController.xib in Resources */,
 				A7A5208D17481E37007A4015 /* album30seconds.jpg in Resources */,
+				A7C92683174A86E7009BB03B /* EsposizioniViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +284,7 @@
 				A799C4AE173EFA620096164B /* DettaglioArtistaViewController.m in Sources */,
 				A799C4B3173F01530096164B /* DettaglioOperaViewController.m in Sources */,
 				A7A5208917481B4D007A4015 /* HomeViewController.m in Sources */,
+				A7C92682174A86E7009BB03B /* EsposizioniViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
