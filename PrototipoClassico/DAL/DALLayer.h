@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+
+enum TIPO_DATASOURCE {none, locale, rete, db, oggetto};
+
 @interface DALLayer : NSObject
-enum TIPO_DATASOURCE {locale, rete, db, oggetto};
+
 
 @property (retain, nonatomic) NSXMLParser *xmlParser;
--(void) apriFileXMLda:(NSString *) percorsoFile;
+
+- (id) init;
+- (void) apriFileXMLda:(NSString *) percorsoFile tipoDiRisorsa:(enum TIPO_DATASOURCE) tipo conData:(NSData *) dati;
 @end
 
