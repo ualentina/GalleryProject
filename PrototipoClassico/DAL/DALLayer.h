@@ -4,7 +4,7 @@
 //
 //  Created by Valentina on 21/05/13.
 //  Copyright (c) 2013 Valentina. All rights reserved.
-//
+//http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/XMLParsing/Articles/UsingParser.html
 
 #import <Foundation/Foundation.h>
 

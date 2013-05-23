@@ -22,8 +22,7 @@
 			<string>immagine3</string>
 		</array>
 	</dict>
-
-<dict>
+	<dict>
 		<key>Nome</key>
 		<string>Andy</string>
 		<key>Cognome</key>
@@ -43,7 +42,7 @@
 			<string>immagine3</string>
 		</array>
 	</dict>
-<dict>
+	<dict>
 		<key>Nome</key>
 		<string>Keith</string>
 		<key>Cognome</key>

@@ -58,6 +58,10 @@
 
 
 }
-
-
+- (void) dealloc {
+	
+	
+	[self.xmlParser release];
+	[super dealloc];
+}
 @end

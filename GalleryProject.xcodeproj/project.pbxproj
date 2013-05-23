@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A741C826174BE50900AAADD9 /* Application2.xib in Resources */ = {isa = PBXBuildFile; fileRef = A741C825174BE50900AAADD9 /* Application2.xib */; };
+		A741C82A174C155B00AAADD9 /* DALLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A741C829174C155B00AAADD9 /* DALLayer.m */; };
 		A799C470173EDF390096164B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A799C46F173EDF390096164B /* UIKit.framework */; };
 		A799C472173EDF390096164B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A799C471173EDF390096164B /* Foundation.framework */; };
 		A799C474173EDF390096164B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A799C473173EDF390096164B /* CoreGraphics.framework */; };
@@ -31,6 +33,7 @@
 		A799C4B3173F01530096164B /* DettaglioOperaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A799C4B1173F01520096164B /* DettaglioOperaViewController.m */; };
 		A799C4B4173F01530096164B /* DettaglioOperaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */; };
 		A799C4B6173F03B50096164B /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A799C4B5173F03B40096164B /* download.jpeg */; };
+		A7A3E3FE174E587400F41FB2 /* artisti.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A3E3FD174E587400F41FB2 /* artisti.plist */; };
 		A7A5208917481B4D007A4015 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A5208817481B4D007A4015 /* HomeViewController.m */; };
 		A7A5208B17481C6B007A4015 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7A5208A17481C6B007A4015 /* HomeViewController.xib */; };
 		A7A5208D17481E37007A4015 /* album30seconds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7A5208C17481E37007A4015 /* album30seconds.jpg */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		A741C822174B7D1A00AAADD9 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A741C825174BE50900AAADD9 /* Application2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Application2.xib; sourceTree = "<group>"; };
+		A741C828174C155B00AAADD9 /* DALLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DALLayer.h; path = DAL/DALLayer.h; sourceTree = "<group>"; };
+		A741C829174C155B00AAADD9 /* DALLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DALLayer.m; path = DAL/DALLayer.m; sourceTree = "<group>"; };
 		A799C46C173EDF390096164B /* PrototipoClassico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrototipoClassico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A799C46F173EDF390096164B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A799C471173EDF390096164B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +79,7 @@
 		A799C4B1173F01520096164B /* DettaglioOperaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DettaglioOperaViewController.m; sourceTree = "<group>"; };
 		A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DettaglioOperaViewController.xib; sourceTree = "<group>"; };
 		A799C4B5173F03B40096164B /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		A7A3E3FD174E587400F41FB2 /* artisti.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = artisti.plist; sourceTree = "<group>"; };
 		A7A5208717481B4D007A4015 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A7A5208817481B4D007A4015 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A7A5208A17481C6B007A4015 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -98,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A741C827174C14E400AAADD9 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				A741C828174C155B00AAADD9 /* DALLayer.h */,
+				A741C829174C155B00AAADD9 /* DALLayer.m */,
+			);
+			name = DAL;
+			sourceTree = "<group>";
+		};
 		A799C463173EDF390096164B = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +146,8 @@
 		A799C475173EDF390096164B /* Versione1.0.0 */ = {
 			isa = PBXGroup;
 			children = (
+				A7A3E3FD174E587400F41FB2 /* artisti.plist */,
+				A741C827174C14E400AAADD9 /* DAL */,
 				A799C49F173EE6FF0096164B /* img */,
 				A799C494173EE4A00096164B /* xib */,
 				A799C493173EE4860096164B /* view */,
@@ -180,6 +198,7 @@
 		A799C494173EE4A00096164B /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				A741C825174BE50900AAADD9 /* Application2.xib */,
 				A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */,
 				A7A5208A17481C6B007A4015 /* HomeViewController.xib */,
 				A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */,
@@ -268,6 +287,8 @@
 				A7A5208B17481C6B007A4015 /* HomeViewController.xib in Resources */,
 				A7A5208D17481E37007A4015 /* album30seconds.jpg in Resources */,
 				A7C92683174A86E7009BB03B /* EsposizioniViewController.xib in Resources */,
+				A741C826174BE50900AAADD9 /* Application2.xib in Resources */,
+				A7A3E3FE174E587400F41FB2 /* artisti.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +308,7 @@
 				A799C4B3173F01530096164B /* DettaglioOperaViewController.m in Sources */,
 				A7A5208917481B4D007A4015 /* HomeViewController.m in Sources */,
 				A7C92682174A86E7009BB03B /* EsposizioniViewController.m in Sources */,
+				A741C82A174C155B00AAADD9 /* DALLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
