@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HomeViewController.h"
 @implementation AppDelegate
 
 - (void)dealloc
@@ -18,12 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-   self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+        //[self.window addSubview:self.tabBarController.view];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
    [self.window makeKeyAndVisible];
-   return YES;
+    return YES;
 
+    /*per test secondo metodo ma non funziona
+    
+        // Create the main screen
+    HomeViewController * mainScreen = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+        // Present as a modal dialog to start the application
+    [self.tabBarController presentViewController:mainScreen animated:NO completion:NULL];
+   
+    return YES;
+    */
    
     
   
