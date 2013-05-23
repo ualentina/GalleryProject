@@ -12,7 +12,7 @@
  http://stackoverflow.com/questions/2339177/having-a-uitabbar-and-a-uinavigationcontroller-in-an-app
  
  
- IN ALTERNATIVA, PROVARE QUESTO
+ IN ALTERNATIVA, PROVATO QUESTO, HOME MODALE... MA VIENE VISUALIZZATO SOLO IL TAB BAR
  http://www.alexmedearis.com/uitabbarcontroller-inside-a-uinavigationcontroller/
  
  */
@@ -90,7 +90,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib. vedi sopra
-    [self setupTabBar];
+      [self setupTabBar];
    }
 
 - (void)didReceiveMemoryWarning
