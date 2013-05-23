@@ -77,6 +77,9 @@
 				<bool key="IBUIResizesToFullScreen">YES</bool>
 			</object>
 			<object class="IBUINavigationController" id="435858599">
+				<object class="IBUISimulatedNavigationBarMetrics" key="IBUISimulatedTopBarMetrics">
+					<bool key="IBUIPrompted">NO</bool>
+				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="IBUIInterfaceOrientation">1</int>
@@ -89,7 +92,7 @@
 				<object class="IBUINavigationBar" key="IBUINavigationBar" id="110255354">
 					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
-					<string key="NSFrameSize">{0, 0}</string>
+					<string key="NSFrameSize">{0, 44}</string>
 					<string key="NSReuseIdentifierKey">_NS:15</string>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				</object>
@@ -124,10 +127,9 @@
 				<int key="IBUIModalTransitionStyle">2</int>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="452593383">
-					<string key="IBUITitle">Esposizioni</string>
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="1034224493">
-						<string key="IBUITitle">Esposizioni</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="257994373">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="833107202">
+						<string key="IBUITitle">Artisti</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<reference key="IBUIParentViewController" ref="143670132"/>
@@ -139,14 +141,14 @@
 					<bool key="IBUIDefinesPresentationContext">YES</bool>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="795217195">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="697927945">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
 						<string key="NSReuseIdentifierKey">_NS:15</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBUIToolbar" key="IBUIToolbar" id="224225546">
+					<object class="IBUIToolbar" key="IBUIToolbar" id="645956793">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrame">{{0, 416}, {320, 44}}</string>
@@ -155,25 +157,25 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<array class="NSMutableArray" key="IBUIViewControllers">
-						<object class="IBUIViewController" id="584813239">
-							<string key="IBUITitle">Elenco mostre</string>
+						<object class="IBUIViewController" id="734738120">
+							<string key="IBUITitle">Elenco artisti</string>
 							<array key="IBUIToolbarItems" id="0"/>
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="713933814">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="242124417">
 								<string key="IBUITitle">Root View Controller</string>
-								<object class="IBUIBarButtonItem" key="IBUIBackBarButtonItem" id="295555902">
+								<object class="IBUIBarButtonItem" key="IBUIBackBarButtonItem" id="818675656">
 									<string key="IBUITitle">indrio</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
 								</object>
-								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="875584968">
+								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="611121456">
 									<string key="IBUITitle">Home</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
-									<reference key="IBUINavigationItem" ref="713933814"/>
+									<reference key="IBUINavigationItem" ref="242124417"/>
 								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="452593383"/>
+							<reference key="IBUIParentViewController" ref="257994373"/>
 							<object class="IBUISimulatedToolbarMetrics" key="IBUISimulatedBottomBarMetrics"/>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
@@ -199,65 +201,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIHorizontal">NO</bool>
 					</object>
-					<object class="IBUINavigationController" id="257994373">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="833107202">
-							<string key="IBUITitle">Artisti</string>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						</object>
-						<reference key="IBUIParentViewController" ref="143670132"/>
-						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-							<int key="IBUIInterfaceOrientation">1</int>
-							<int key="interfaceOrientation">1</int>
-						</object>
-						<bool key="IBUIDefinesPresentationContext">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="697927945">
-							<nil key="NSNextResponder"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrameSize">{0, 0}</string>
-							<string key="NSReuseIdentifierKey">_NS:15</string>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						</object>
-						<object class="IBUIToolbar" key="IBUIToolbar" id="645956793">
-							<nil key="NSNextResponder"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrame">{{0, 416}, {320, 44}}</string>
-							<bool key="IBUIOpaque">NO</bool>
-							<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						</object>
-						<array class="NSMutableArray" key="IBUIViewControllers">
-							<object class="IBUIViewController" id="734738120">
-								<string key="IBUITitle">Elenco artisti</string>
-								<reference key="IBUIToolbarItems" ref="0"/>
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="242124417">
-									<string key="IBUITitle">Root View Controller</string>
-									<object class="IBUIBarButtonItem" key="IBUIBackBarButtonItem" id="818675656">
-										<string key="IBUITitle">indrio</string>
-										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-										<int key="IBUIStyle">1</int>
-									</object>
-									<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="611121456">
-										<string key="IBUITitle">Home</string>
-										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-										<int key="IBUIStyle">1</int>
-										<reference key="IBUINavigationItem" ref="242124417"/>
-									</object>
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								</object>
-								<reference key="IBUIParentViewController" ref="257994373"/>
-								<object class="IBUISimulatedToolbarMetrics" key="IBUISimulatedBottomBarMetrics"/>
-								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-									<int key="IBUIInterfaceOrientation">1</int>
-									<int key="interfaceOrientation">1</int>
-								</object>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<bool key="IBUIHorizontal">NO</bool>
-							</object>
-						</array>
-					</object>
+					<reference ref="257994373"/>
 					<object class="IBUINavigationController" id="49920849">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="316230537">
 							<string key="IBUITitle">Opere</string>
@@ -295,7 +239,66 @@
 							</object>
 						</array>
 					</object>
-					<reference ref="452593383"/>
+					<object class="IBUINavigationController" id="452593383">
+						<string key="IBUITitle">Esposizioni</string>
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="1034224493">
+							<string key="IBUITitle">Esposizioni</string>
+							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						</object>
+						<reference key="IBUIParentViewController" ref="143670132"/>
+						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+							<int key="IBUIInterfaceOrientation">1</int>
+							<int key="interfaceOrientation">1</int>
+						</object>
+						<bool key="IBUIDefinesPresentationContext">YES</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<bool key="IBUIHorizontal">NO</bool>
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="795217195">
+							<nil key="NSNextResponder"/>
+							<int key="NSvFlags">256</int>
+							<string key="NSFrameSize">{0, 0}</string>
+							<string key="NSReuseIdentifierKey">_NS:15</string>
+							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						</object>
+						<object class="IBUIToolbar" key="IBUIToolbar" id="224225546">
+							<nil key="NSNextResponder"/>
+							<int key="NSvFlags">256</int>
+							<string key="NSFrame">{{0, 416}, {320, 44}}</string>
+							<bool key="IBUIOpaque">NO</bool>
+							<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						</object>
+						<array class="NSMutableArray" key="IBUIViewControllers">
+							<object class="IBUIViewController" id="584813239">
+								<string key="IBUITitle">Elenco mostre</string>
+								<reference key="IBUIToolbarItems" ref="0"/>
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="713933814">
+									<string key="IBUITitle">Root View Controller</string>
+									<object class="IBUIBarButtonItem" key="IBUIBackBarButtonItem" id="295555902">
+										<string key="IBUITitle">indrio</string>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIStyle">1</int>
+									</object>
+									<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="875584968">
+										<string key="IBUITitle">Home</string>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIStyle">1</int>
+										<reference key="IBUINavigationItem" ref="713933814"/>
+									</object>
+									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								</object>
+								<reference key="IBUIParentViewController" ref="452593383"/>
+								<object class="IBUISimulatedToolbarMetrics" key="IBUISimulatedBottomBarMetrics"/>
+								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+									<int key="IBUIInterfaceOrientation">1</int>
+									<int key="interfaceOrientation">1</int>
+								</object>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<bool key="IBUIHorizontal">NO</bool>
+							</object>
+						</array>
+					</object>
 					<object class="IBUIViewController" id="796703641">
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="455880943">
 							<string key="IBUITitle">About us</string>
