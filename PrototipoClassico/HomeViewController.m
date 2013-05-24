@@ -90,7 +90,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib. vedi sopra
-      [self setupTabBar];
+    [self setupTabBar];
    }
 
 - (void)didReceiveMemoryWarning
@@ -107,7 +107,7 @@
 -(IBAction)vediArtisti:(id)sender
 
 {
-    
+     [self setupTabBar];
     [self.navigationController pushViewController:self.tabBarController animated:YES];
      self.tabBarController.selectedIndex=0;
    

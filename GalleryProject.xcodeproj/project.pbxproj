@@ -40,6 +40,8 @@
 		A7A5208D17481E37007A4015 /* album30seconds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7A5208C17481E37007A4015 /* album30seconds.jpg */; };
 		A7C92682174A86E7009BB03B /* EsposizioniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C92680174A86E7009BB03B /* EsposizioniViewController.m */; };
 		A7C92683174A86E7009BB03B /* EsposizioniViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */; };
+		A7D64388174F687200DD791B /* cocci.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D64387174F687200DD791B /* cocci.png */; };
+		A7D6438B174FA7D600DD791B /* artisti.xml in Resources */ = {isa = PBXBuildFile; fileRef = A7D6438A174FA7D600DD791B /* artisti.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		A7C9267F174A86E7009BB03B /* EsposizioniViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EsposizioniViewController.h; sourceTree = "<group>"; };
 		A7C92680174A86E7009BB03B /* EsposizioniViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EsposizioniViewController.m; sourceTree = "<group>"; };
 		A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EsposizioniViewController.xib; sourceTree = "<group>"; };
+		A7D64387174F687200DD791B /* cocci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocci.png; sourceTree = "<group>"; };
+		A7D6438A174FA7D600DD791B /* artisti.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = artisti.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 		A799C476173EDF390096164B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7D6438A174FA7D600DD791B /* artisti.xml */,
 				A7A3E3FD174E587400F41FB2 /* artisti.plist */,
 				A799C477173EDF390096164B /* PrototipoClassico-Info.plist */,
 				A799C478173EDF390096164B /* InfoPlist.strings */,
@@ -228,6 +233,7 @@
 		A799C49F173EE6FF0096164B /* img */ = {
 			isa = PBXGroup;
 			children = (
+				A7D64387174F687200DD791B /* cocci.png */,
 				A7A5208C17481E37007A4015 /* album30seconds.jpg */,
 				A799C4B5173F03B40096164B /* download.jpeg */,
 				A799C4A0173EE7700096164B /* galleriahome.jpg */,
@@ -327,6 +333,8 @@
 				A7C92683174A86E7009BB03B /* EsposizioniViewController.xib in Resources */,
 				A741C826174BE50900AAADD9 /* Application2.xib in Resources */,
 				A7A3E3FE174E587400F41FB2 /* artisti.plist in Resources */,
+				A7D64388174F687200DD791B /* cocci.png in Resources */,
+				A7D6438B174FA7D600DD791B /* artisti.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

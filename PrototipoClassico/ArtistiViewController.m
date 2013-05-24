@@ -23,6 +23,128 @@
     }
     return self;
 }
+
+    //parsing del file xml artisti.xml aggiunto il 24/05/2012
+-(BOOL)startParsing{
+    
+    BOOL esito=NO;
+    NSXMLParser *parser;
+    @try{
+            //individuo il file xml o altra sorgente dati
+        NSString *xmlPath=[[NSBundle mainBundle] pathForResource:FILE_ARTISTI ofType:@"xml"];
+            //questo va bene solo se ho salvato il file con write to file atomically
+            // self.lista= [[NSArray alloc]initWithContentsOfFile:xmlPath];
+            //creo un oggetto URL per passarlo al parser
+            //  siccome uso un file locale, devi utilizzare questo metodo
+            //fileURLWithPath:isDirectory:
+        NSURL *xmlURL= [ NSURL fileURLWithPath:xmlPath isDirectory:NO];
+
+       
+        //if xmlURL is not null cioè se xmlURL è diverso da nil
+        if (xmlURL){
+                 //creo oggetto NSXMLParser e lo inizializzo con i contenuti della URL
+                parser=[[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+                
+                    //imposto il delegato del parser e lo setto
+                [parser setDelegate:self];
+                [parser setShouldProcessNamespaces:NO];
+                [parser setShouldReportNamespacePrefixes:NO];
+                [parser setShouldResolveExternalEntities:NO];
+                    //inizio a parsare: INIZIA SUBITO A GESTIRE EVENTI!!
+                esito = [parser parse];
+                  if(esito == YES){
+                        NSLog(@"PARSING OK");
+                    } else {
+                        NSLog(@"ERROR PARSING");
+                    }
+            
+        }
+    } @catch (NSException * e)  {
+         NSLog(@"Exception: %@", e);
+        
+    } @finally {
+        NSLog(@"finally");
+        [parser release];
+    }
+    return esito;
+}
+-(BOOL) caricaFileXML
+{
+     BOOL esito=NO;
+               @try {
+                    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"artisti" ofType:@"plist"];
+                    if (filePath) {
+        ////              //  self.lista= [NSArray arrayWithContentsOfFile:filePath]; oppure
+                        self.lista= [[NSArray alloc]initWithContentsOfFile:filePath];
+                        esito=true;
+                           // NSLog(@"First Index Name %@",[[ self.lista objectAtIndex:0] objectForKey:@"Nome"]);
+        ////
+                 }
+        ////
+               } @catch (NSException * e) {
+        //                //http://www.devapp.it/wordpress/uialertview-guida-completa-all-uso.html
+                  
+                }
+return esito;
+
+}
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName
+  namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName
+	attributes:(NSDictionary *)attributeDict {
+	
+   static int contatore=0;
+	if ([elementName isEqualToString:@"artisti"]){
+            //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nInizio studenti",textArea.text]];
+		NSLog(@"inizio artisti");
+	}
+	else if([elementName isEqualToString:@"artista"]){
+            //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nNuovo studente",textArea.text]];
+        NSLog(@"trovato artista");
+        contatore++;
+	}
+	else if([elementName isEqualToString:@"nome"]) {
+            //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nMatricola: ",textArea.text]];
+        NSLog(@"artista ha nome");
+	}
+	else if([elementName isEqualToString:@"cognome"]) {
+            //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nCognome: ",textArea.text]];
+         NSLog(@"artista ha cognome");
+	}
+	else if([elementName isEqualToString:@"immagine"]) {
+            //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nNome: ",textArea.text]];
+         NSLog(@"artista ha immagine");
+    } else if([elementName isEqualToString:@"data_nascita"]) {
+                //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nNome: ",textArea.text]];
+            NSLog(@"artista ha data_nascita");
+	} else if([elementName isEqualToString:@"data_morte"]) {
+            //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nNome: ",textArea.text]];
+        NSLog(@"artista ha data_morte");
+	} else if([elementName isEqualToString:@"bio"]) {
+            //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nNome: ",textArea.text]];
+        NSLog(@"artista ha bio");
+	
+    } else if([elementName isEqualToString:@"opere"]) {
+        //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nNome: ",textArea.text]];
+    NSLog(@"artista ha opere");
+    }
+
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+        //[textArea setText:[[NSString alloc] initWithFormat:@"%@%@",textArea.text,string]];
+    NSLog(@"stringa corrente %@", string);
+}
+
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName
+  namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
+        //[textArea setText:[[NSString alloc] initWithFormat:@"%@\nFine elemento: %@",textArea.text,elementName]];
+     NSLog(@"fine elemento %@", elementName);
+    
+}
+
+
 /*
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     return self.keys;
@@ -43,41 +165,38 @@
 {
     [super viewDidLoad];
    
-        NSLog(@"viewDidLoad del ArtistiViewController");
-//        
-        @try {
-            NSString *filePath = [[NSBundle mainBundle] pathForResource:@"artisti" ofType:@"plist"];
-            if (filePath) {
-//              //  self.lista= [NSArray arrayWithContentsOfFile:filePath]; oppure
-                self.lista= [[NSArray alloc]initWithContentsOfFile:filePath];
-                    // NSLog(@"First Index Name %@",[[ self.lista objectAtIndex:0] objectForKey:@"Nome"]);
-//                
-           }
-//            
-        }
-        @catch (NSException * e) {
-                //http://www.devapp.it/wordpress/uialertview-guida-completa-all-uso.html
-            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"ERRORE" message:@"Errore in apertura del file artisti.plist" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    NSLog(@"viewDidLoad del ArtistiViewController");
+    BOOL esito=[self startParsing];
+    if  ( (esito==NO) && ([self caricaFileXML]== NO) )
+    {
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"ERRORE" message:@"Errore in apertura della fonte dati artisti" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [alertView show];
             [alertView release];
-            NSLog(@"Errore in apertura del file artisti.plist");
-        }
-        //CODICE ORIGINALE
+          
+    }
     
-//    NSMutableArray *tmp = [[NSMutableArray alloc] initWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",nil];
-//    self.keys = tmp;
-//    [tmp release];
+     [self.tableView reloadData];
+//        
+//        @try {
+//            NSString *filePath = [[NSBundle mainBundle] pathForResource:@"artisti" ofType:@"plist"];
+//            if (filePath) {
+////              //  self.lista= [NSArray arrayWithContentsOfFile:filePath]; oppure
+//                self.lista= [[NSArray alloc]initWithContentsOfFile:filePath];
+//                    // NSLog(@"First Index Name %@",[[ self.lista objectAtIndex:0] objectForKey:@"Nome"]);
+////                
+//           }
+////            
+//        }
+//        @catch (NSException * e) {
+//                //http://www.devapp.it/wordpress/uialertview-guida-completa-all-uso.html
+//            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"ERRORE" message:@"Errore in apertura del file artisti.plist" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+//            [alertView show];
+//            [alertView release];
+//            NSLog(@"Errore in apertura del file artisti.plist");
+//        }
+// 
 //    
-//    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
-//    [dict setObject:[NSMutableArray arrayWithObjects:@"Aristide",@"Amalia",@"Antonio",@"Anna", nil] forKey:@"A"];
-//    [dict setObject:[NSMutableArray arrayWithObjects:@"Bibo", nil] forKey:@"B"];
-//    [dict setObject:[NSMutableArray arrayWithObjects:@"Carlo",@"Carlantonio",@"Carmen", nil] forKey:@"C"];
-//    [dict setObject:[NSMutableArray arrayWithObjects:@"Dio Ronnie James",@"Democrate",@"Demostene",@"Diocleziano", nil] forKey:@"D"];
-//    
-//    self.data = dict;
-//    [dict release];
-    
-    [self.tableView reloadData];
+   
     
    
     // Uncomment the following line to preserve selection between presentations.
@@ -140,7 +259,7 @@
         //ricorda che stringWithFormat fa autorelease!
 //    NSString *temp=[NSString stringWithFormat:@"%@ %@",[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"],[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Cognome"] ];
 //    cell.textLabel.text =temp;
-    cell.textLabel.text= [StringUtilities concat:[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"] withString:[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Cognome"]];
+    cell.textLabel.text= [StringUtilities concat:[[self.lista objectAtIndex:indexPath.row] objectForKey:@"nome"] withString:[[self.lista objectAtIndex:indexPath.row] objectForKey:@"cognome"]];
     
         //  [[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"];
     return cell;

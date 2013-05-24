@@ -21,4 +21,5 @@
 #define TAB_ESPOSIZIONE_CORRENTE @"Esposizione corrente"
 #define TAB_INFO @"About us"
 
+#define FILE_ARTISTI @"artisti"
 #endif

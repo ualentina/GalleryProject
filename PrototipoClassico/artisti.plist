@@ -3,19 +3,19 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>Nome</key>
+		<key>nome</key>
 		<string>Pablo</string>
-		<key>Cognome</key>
+		<key>cognome</key>
 		<string>Picasso</string>
-		<key>Image</key>
+		<key>immagine</key>
 		<string>cacao.png</string>
-		<key>DataNascita</key>
+		<key>data_nascita</key>
 		<date>1920-05-23T14:01:21Z</date>
-		<key>DataMorte</key>
+		<key>data_morte</key>
 		<date>1978-05-23T15:02:43Z</date>
-		<key>Bio</key>
+		<key>bio</key>
 		<string>Massimo 120 caratteri di biografia</string>
-		<key>Opere</key>
+		<key>opere</key>
 		<array>
 			<string>immagine1</string>
 			<string>immagine2</string>
@@ -23,19 +23,19 @@
 		</array>
 	</dict>
 	<dict>
-		<key>Nome</key>
+		<key>nome</key>
 		<string>Andy</string>
-		<key>Cognome</key>
+		<key>cognome</key>
 		<string>Wharol</string>
-		<key>Image</key>
+		<key>immagine</key>
 		<string>cacao.png</string>
-		<key>DataNascita</key>
+		<key>data_nascita</key>
 		<date>1930-05-21T14:01:21Z</date>
-		<key>DataMorte</key>
+		<key>data_morte</key>
 		<date>1978-09-13T15:02:43Z</date>
-		<key>Bio</key>
+		<key>bio</key>
 		<string>Massimo 120 caratteri di biografia</string>
-		<key>Opere</key>
+		<key>opere</key>
 		<array>
 			<string>immagine1</string>
 			<string>immagine2</string>
@@ -43,19 +43,19 @@
 		</array>
 	</dict>
 	<dict>
-		<key>Nome</key>
+		<key>nome</key>
 		<string>Keith</string>
-		<key>Cognome</key>
+		<key>cognome</key>
 		<string>Haring</string>
-		<key>Image</key>
+		<key>immagine</key>
 		<string>cacao.png</string>
-		<key>DataNascita</key>
+		<key>data_nascita</key>
 		<date>1940-10-21T14:01:21Z</date>
-		<key>DataMorte</key>
+		<key>data_morte</key>
 		<date>1988-12-13T15:02:43Z</date>
-		<key>Bio</key>
+		<key>bio</key>
 		<string>Massimo 120 caratteri di biografia</string>
-		<key>Opere</key>
+		<key>opere</key>
 		<array>
 			<string>immagine1</string>
 			<string>immagine2</string>
