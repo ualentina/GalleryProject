@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <StringUtilities/StringUtilities.h>
 
 @interface ArtistiViewController : UITableViewController
 

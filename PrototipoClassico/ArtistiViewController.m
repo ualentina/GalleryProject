@@ -8,6 +8,7 @@
 
 #import "ArtistiViewController.h"
 #import "DettaglioArtistaViewController.h"
+
 @interface ArtistiViewController ()
 
 @end
@@ -47,9 +48,9 @@
         @try {
             NSString *filePath = [[NSBundle mainBundle] pathForResource:@"artisti" ofType:@"plist"];
             if (filePath) {
-//              //  self.lista= [NSArray arrayWithContentsOfFile:filePath];
+//              //  self.lista= [NSArray arrayWithContentsOfFile:filePath]; oppure
                 self.lista= [[NSArray alloc]initWithContentsOfFile:filePath];
-                NSLog(@"First Index Name %@",[[ self.lista objectAtIndex:0] objectForKey:@"Nome"]);
+                    // NSLog(@"First Index Name %@",[[ self.lista objectAtIndex:0] objectForKey:@"Nome"]);
 //                
            }
 //            
@@ -137,9 +138,9 @@
     
         // Configure the cell...
         //ricorda che stringWithFormat fa autorelease!
-    NSString *temp=[NSString stringWithFormat:@"%@ %@",[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"],[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Cognome"] ];
-    cell.textLabel.text =temp;
-       
+//    NSString *temp=[NSString stringWithFormat:@"%@ %@",[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"],[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Cognome"] ];
+//    cell.textLabel.text =temp;
+    cell.textLabel.text= [StringUtilities concat:[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"] withString:[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Cognome"]];
     
         //  [[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"];
     return cell;

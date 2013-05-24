@@ -34,12 +34,23 @@
 		A799C4B4173F01530096164B /* DettaglioOperaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */; };
 		A799C4B6173F03B50096164B /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A799C4B5173F03B40096164B /* download.jpeg */; };
 		A7A3E3FE174E587400F41FB2 /* artisti.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A3E3FD174E587400F41FB2 /* artisti.plist */; };
+		A7A3E42D174EB0DA00F41FB2 /* libStringUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A3E42C174EB05000F41FB2 /* libStringUtilities.a */; };
 		A7A5208917481B4D007A4015 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A5208817481B4D007A4015 /* HomeViewController.m */; };
 		A7A5208B17481C6B007A4015 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7A5208A17481C6B007A4015 /* HomeViewController.xib */; };
 		A7A5208D17481E37007A4015 /* album30seconds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7A5208C17481E37007A4015 /* album30seconds.jpg */; };
 		A7C92682174A86E7009BB03B /* EsposizioniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C92680174A86E7009BB03B /* EsposizioniViewController.m */; };
 		A7C92683174A86E7009BB03B /* EsposizioniViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7A3E42B174EB05000F41FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A3E427174EB05000F41FB2 /* StringUtilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7A3E408174E8EA900F41FB2;
+			remoteInfo = StringUtilities;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A741C822174B7D1A00AAADD9 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -80,6 +91,7 @@
 		A799C4B2173F01520096164B /* DettaglioOperaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DettaglioOperaViewController.xib; sourceTree = "<group>"; };
 		A799C4B5173F03B40096164B /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
 		A7A3E3FD174E587400F41FB2 /* artisti.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = artisti.plist; sourceTree = "<group>"; };
+		A7A3E427174EB05000F41FB2 /* StringUtilities.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StringUtilities.xcodeproj; path = ../StringUtilities/StringUtilities/StringUtilities.xcodeproj; sourceTree = "<group>"; };
 		A7A5208717481B4D007A4015 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A7A5208817481B4D007A4015 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A7A5208A17481C6B007A4015 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -94,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A3E42D174EB0DA00F41FB2 /* libStringUtilities.a in Frameworks */,
 				A799C4AA173EF6680096164B /* CoreLocation.framework in Frameworks */,
 				A799C4A8173EF6560096164B /* MapKit.framework in Frameworks */,
 				A799C470173EDF390096164B /* UIKit.framework in Frameworks */,
@@ -117,6 +130,7 @@
 		A799C463173EDF390096164B = {
 			isa = PBXGroup;
 			children = (
+				A7A3E427174EB05000F41FB2 /* StringUtilities.xcodeproj */,
 				A799C475173EDF390096164B /* Versione1.0.0 */,
 				A799C46E173EDF390096164B /* Frameworks */,
 				A799C46D173EDF390096164B /* Products */,
@@ -146,7 +160,6 @@
 		A799C475173EDF390096164B /* Versione1.0.0 */ = {
 			isa = PBXGroup;
 			children = (
-				A7A3E3FD174E587400F41FB2 /* artisti.plist */,
 				A741C827174C14E400AAADD9 /* DAL */,
 				A799C49F173EE6FF0096164B /* img */,
 				A799C494173EE4A00096164B /* xib */,
@@ -162,6 +175,7 @@
 		A799C476173EDF390096164B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7A3E3FD174E587400F41FB2 /* artisti.plist */,
 				A799C477173EDF390096164B /* PrototipoClassico-Info.plist */,
 				A799C478173EDF390096164B /* InfoPlist.strings */,
 				A799C47B173EDF390096164B /* main.m */,
@@ -221,6 +235,14 @@
 			name = img;
 			sourceTree = "<group>";
 		};
+		A7A3E428174EB05000F41FB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7A3E42C174EB05000F41FB2 /* libStringUtilities.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,12 +282,28 @@
 			mainGroup = A799C463173EDF390096164B;
 			productRefGroup = A799C46D173EDF390096164B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A7A3E428174EB05000F41FB2 /* Products */;
+					ProjectRef = A7A3E427174EB05000F41FB2 /* StringUtilities.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A799C46B173EDF390096164B /* PrototipoClassico */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A7A3E42C174EB05000F41FB2 /* libStringUtilities.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libStringUtilities.a;
+			remoteRef = A7A3E42B174EB05000F41FB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A799C46A173EDF390096164B /* Resources */ = {
