@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artisti>
+<artista id="1">
+<nome>Pablo</nome>
+<cognome>Picasso</cognome>
+<immagine>cocci.png</immagine>
+<data_nascita>23-05-1920</data_nascita>
+<data_morte></data_morte>
+<bio>Massimo 120 caratteri di biografia</bio>
+<opere>
+<opera id="1">
+<titolo>Titolo opera1</titolo>
+<data_creazione>12-12-1949</data_creazione>
+<id_esibizione></id_esibizione>
+<img_small>cocci.png</img_small>
+<img_big>cocci.png</img_big>
+</opera>
+<opera id="2">
+<titolo>Titolo opera2</titolo>
+<data_creazione>15-12-1949</data_creazione>
+<id_esibizione></id_esibizione>
+<img_small>cocci.png</img_small>
+<img_big>cocci.png</img_big>
+</opera>
+</opere>
+</artista>
+<artista id="2">
+<nome>Andy</nome>
+<cognome>Wharik</cognome>
+<immagine>cocci.png</immagine>
+<data_nascita>23-05-1920</data_nascita>
+<data_morte></data_morte>
+<bio>Massimo 120 caratteri di biografia</bio>
+<opere>
+<opera id="1">
+<titolo>Titolo opera1</titolo>
+<data_creazione>12-12-1949</data_creazione>
+<id_esibizione></id_esibizione>
+<img_small>cocci.png</img_small>
+<img_big>cocci.png</img_big>
+</opera>
+<opera id="2">
+<titolo>Titolo opera2</titolo>
+<data_creazione>15-12-1949</data_creazione>
+<id_esibizione></id_esibizione>
+<img_small>cocci.png</img_small>
+<img_big>cocci.png</img_big>
+</opera>
+</opere>
+</artista>
+</artisti>
