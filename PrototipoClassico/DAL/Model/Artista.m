@@ -9,7 +9,7 @@
 #import "Artista.h"
 
 @implementation Artista
-@synthesize nome, cognome, pathImmagine, dataNascita, dataMorte,bio;
+    @synthesize nome, cognome, pathImmagine, dataNascita, dataMorte,bio;
 
     //benchè mi serva della sintesi, posso cmq scrivere il mio setter
 -(void) setNome:(NSString *)newValue{
@@ -23,5 +23,48 @@
 }
 -(void) setBio:(NSString *)newValue{
     bio=[newValue copy];
+}
+-(id) initWithNome:(NSString *) name withCognome:(NSString *) surname withImg:(NSString *) immagine
+       withNascita:(NSDate *) dateBirth withMorte:(NSDate *) dateDeath withBio:(NSString *) biography
+{
+    
+    if (self=[super init])
+    {
+        nome=name;
+        cognome=surname;
+        pathImmagine=immagine;
+        dataNascita=dateBirth;
+        dataMorte=dateDeath;
+        bio=biography;
+        
+    }
+    return self;
+}
+
+-(id) init{
+    nome=@"";
+    cognome=@"";
+    pathImmagine=@"";
+    dataNascita=nil;
+    dataMorte=nil;
+    bio=@"";
+    return self;
+    
+}
+-(void) dealloc{
+    
+    /* NB: non utilizzare il riferimento a self.nome 
+     https://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmRules.html
+     
+     */
+    [nome release];
+    [cognome release];
+    [pathImmagine release];
+    [dataNascita release];
+    [dataMorte release];
+    [bio release];
+ 
+        //per ultimo invoca dealloc della superclasse
+    [super dealloc];
 }
 @end

@@ -17,4 +17,12 @@
 @property (nonatomic,retain) NSDate* dataMorte;
 @property (nonatomic,copy) NSString* bio;
     //aggiungere un NSMutableArray di oggetti Opera
+    //initializers
+-(id) init;
+-(id) initWithNome:(NSString *) nome
+           withCognome:(NSString *) cognome
+           withImg:(NSString *) img
+           withNascita:(NSDate *) dataNascita
+           withMorte:(NSDate *) dataMorte
+           withBio:(NSString *) bio;
 @end

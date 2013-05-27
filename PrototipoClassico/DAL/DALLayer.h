@@ -18,5 +18,17 @@ enum TIPO_DATASOURCE {none, locale, rete, db, oggetto};
 
 - (id) init;
 - (void) apriFileXMLda:(NSString *) percorsoFile tipoDiRisorsa:(enum TIPO_DATASOURCE) tipo conData:(NSData *) dati;
+    //in alternativa
+/*
+ - (bool) apriFileXMLda:(NSString *) percorsoFile tipoDiRisorsa:(enum TIPO_DATASOURCE) tipo conData:(NSData *) dati;
+ 
+ NB: metodo factory
+ + (CardPainter*) sharedPainter {
+ static CardPainter* sp = nil;
+ if (nil == sp)
+ sp = [CardPainter new];
+ return sp;
+ }
+ */
 @end
 
