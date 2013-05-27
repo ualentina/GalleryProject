@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <StringUtilities/StringUtilities.h>
 #import "Constants.h"
+#import "NSString+MyStringCategory.h"
 
 @interface ArtistiViewController : UITableViewController
 /*

@@ -40,7 +40,9 @@
         NSURL *xmlURL= [ NSURL fileURLWithPath:xmlPath isDirectory:NO];
 
        
-        //if xmlURL is not null cioè se xmlURL è diverso da nil
+        //if xmlURL is not null cioè se xmlURL è diverso da nil cioè se true...
+        //NB: NSString *s=nil;
+        // if (nil==s) se la stringa è nulla ovvero if (!s) essendo nil==0==false
         if (xmlURL){
                  //creo oggetto NSXMLParser e lo inizializzo con i contenuti della URL
                 parser=[[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
@@ -260,6 +262,8 @@ return esito;
 //    NSString *temp=[NSString stringWithFormat:@"%@ %@",[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"],[[self.lista objectAtIndex:indexPath.row] objectForKey:@"Cognome"] ];
 //    cell.textLabel.text =temp;
     cell.textLabel.text= [StringUtilities concat:[[self.lista objectAtIndex:indexPath.row] objectForKey:@"nome"] withString:[[self.lista objectAtIndex:indexPath.row] objectForKey:@"cognome"]];
+    /* PROVO A INVOCARE IL METODO CONCAT DEFINITO NELLA CATEGORIA */
+    cell.detailTextLabel.text= [[[self.lista objectAtIndex:indexPath.row] objectForKey:@"nome"] concat:@" "];
     
         //  [[self.lista objectAtIndex:indexPath.row] objectForKey:@"Nome"];
     return cell;
