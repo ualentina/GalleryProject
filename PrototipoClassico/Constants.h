@@ -23,3 +23,4 @@
 
 #define FILE_ARTISTI @"artisti"
 #endif
+    //in alternativa alle costanti, NSString* const NOMECOSTANTE=@"pippo";
