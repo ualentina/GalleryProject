@@ -9,7 +9,7 @@
 #import "Opera.h"
 
 @implementation Opera
-@synthesize id_opera, id_artista, titolo, pathSmallImmagine, pathBigImmagine, dataCreazione;
+@synthesize id_opera, id_artista,id_esposizione, titolo, pathSmallImmagine, pathBigImmagine, dataCreazione;
 
 -(void) setTitolo:(NSString *)newValue{
     titolo=[newValue copy];
@@ -26,6 +26,7 @@
     
     id_opera=@"-1";
     id_artista=nil;
+    id_esposizione=nil;
     titolo=@"";
     pathSmallImmagine=@"";
     pathBigImmagine=nil;
@@ -35,18 +36,21 @@
     
 }
 
--(id) initWithId:(NSString*) idOpera withArtista:(Artista *) a withTitolo:(NSString *) title withSmallImg:(NSString *) smallImg withBigImg:(NSString *) bigImg withDataCreazione:(NSDate *) dtCreazione
+-(id) initWithId:(NSString*) idOpera withArtista:(Artista *) a withEsposizione:(Esposizione*) esp withTitolo:(NSString *) title withSmallImg:(NSString *) smallImg withBigImg:(NSString *) bigImg withDataCreazione:(NSDate *) dtCreazione
 {
      if (self=[super init])
     {
         id_opera=idOpera;
         id_artista=[a copy]; //?
+        id_esposizione=[esp copy];
         titolo=title;
         pathSmallImmagine=smallImg;
         pathBigImmagine=bigImg;
         dataCreazione=dtCreazione;
         [a release]; //?
-        a=nil; 
+        [esp release];
+        a=nil;
+        esp=nil;
       
        
         
@@ -54,7 +58,7 @@
     
     return self;
 }
-
+/*
 -(NSMutableArray*) getOperePerId:(NSString*) idArtista{
     
     NSMutableArray* temp=[[NSMutableArray alloc] init];
@@ -63,12 +67,15 @@
         //e passo questo array all'oggetto Artista
     return temp;
 }
+ */
 -(void) dealloc{
     
   
     [id_opera release];
     [id_artista release];
     id_artista=nil;
+    [id_esposizione release];
+    id_esposizione=nil;
     [titolo release];
     [pathSmallImmagine release];
     [pathBigImmagine release];

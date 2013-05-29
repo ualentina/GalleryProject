@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Artista;
+@class Artista,Esposizione;
 @interface Opera : NSObject
 @property (nonatomic,copy,readonly) NSString* id_opera;//pkey
                                                        //@property (nonatomic,copy,readonly) NSString* id_artista; //? id artista come stringa
 @property (nonatomic,assign) Artista* id_artista;           // o puntatore a un oggetto Artista?
-
+@property (nonatomic,retain) Esposizione* id_esposizione;  //come sopra, un riferimento a Esposizione
 @property (nonatomic,copy) NSString* titolo;
 @property (nonatomic,copy) NSString* pathSmallImmagine;
 @property (nonatomic,copy) NSString* pathBigImmagine;
@@ -22,6 +22,7 @@
     //initializers
 -(id) init;
 -(id) initWithId:(NSString*) idOpera withArtista:(Artista *) a
+      withEsposizione:(Esposizione*) esp
       withTitolo:(NSString *) title
       withSmallImg:(NSString *) smallImg
       withBigImg:(NSString *) bigImg
