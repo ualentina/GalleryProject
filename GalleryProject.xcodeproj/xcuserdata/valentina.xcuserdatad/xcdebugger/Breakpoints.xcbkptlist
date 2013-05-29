@@ -17,19 +17,6 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "PrototipoClassico/ArtistiViewController.m"
-         timestampString = "391107515.365674"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "241"
-         endingLineNumber = "241"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
@@ -91,7 +78,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "164"
          endingLineNumber = "164"
-         landmarkName = "-viewDidLoad"
+         landmarkName = "-tableView:heightForHeaderInSection:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -104,8 +91,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "230"
          endingLineNumber = "230"
-         landmarkName = "-tableView:numberOfRowsInSection:"
-         landmarkType = "5">
+         landmarkName = "@implementation ArtistiViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
@@ -130,7 +117,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "92"
          endingLineNumber = "92"
-         landmarkName = "-parser:didStartElement:namespaceURI:qualifiedName:attributes:"
+         landmarkName = "-caricaFileXML"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -143,7 +130,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "71"
          endingLineNumber = "71"
-         landmarkName = "-caricaFileXML"
+         landmarkName = "-startParsing"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint

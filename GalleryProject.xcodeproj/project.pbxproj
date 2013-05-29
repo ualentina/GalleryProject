@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73E84D2175353F300FA27A6 /* NSString+MyStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A73E84D1175353F300FA27A6 /* NSString+MyStringCategory.m */; };
 		A741C826174BE50900AAADD9 /* Application2.xib in Resources */ = {isa = PBXBuildFile; fileRef = A741C825174BE50900AAADD9 /* Application2.xib */; };
 		A741C82A174C155B00AAADD9 /* DALLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A741C829174C155B00AAADD9 /* DALLayer.m */; };
 		A799C470173EDF390096164B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A799C46F173EDF390096164B /* UIKit.framework */; };
@@ -42,6 +43,10 @@
 		A7C92683174A86E7009BB03B /* EsposizioniViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */; };
 		A7D64388174F687200DD791B /* cocci.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D64387174F687200DD791B /* cocci.png */; };
 		A7D6438B174FA7D600DD791B /* artisti.xml in Resources */ = {isa = PBXBuildFile; fileRef = A7D6438A174FA7D600DD791B /* artisti.xml */; };
+		A7DBD5C21754CFC900AFADF5 /* Artista.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD5BF1754CFC900AFADF5 /* Artista.m */; };
+		A7DBD5C31754CFC900AFADF5 /* Opera.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD5C11754CFC900AFADF5 /* Opera.m */; };
+		A7DBD5C61754D14600AFADF5 /* Esposizione.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD5C51754D14600AFADF5 /* Esposizione.m */; };
+		A7DBD5C91754D17E00AFADF5 /* Galleria.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD5C81754D17E00AFADF5 /* Galleria.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A73E84D0175353F300FA27A6 /* NSString+MyStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MyStringCategory.h"; sourceTree = "<group>"; };
+		A73E84D1175353F300FA27A6 /* NSString+MyStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MyStringCategory.m"; sourceTree = "<group>"; };
 		A741C822174B7D1A00AAADD9 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A741C825174BE50900AAADD9 /* Application2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Application2.xib; sourceTree = "<group>"; };
 		A741C828174C155B00AAADD9 /* DALLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DALLayer.h; path = DAL/DALLayer.h; sourceTree = "<group>"; };
@@ -103,6 +110,14 @@
 		A7C92681174A86E7009BB03B /* EsposizioniViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EsposizioniViewController.xib; sourceTree = "<group>"; };
 		A7D64387174F687200DD791B /* cocci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocci.png; sourceTree = "<group>"; };
 		A7D6438A174FA7D600DD791B /* artisti.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = artisti.xml; sourceTree = "<group>"; };
+		A7DBD5BE1754CFC900AFADF5 /* Artista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Artista.h; path = Model/Artista.h; sourceTree = "<group>"; };
+		A7DBD5BF1754CFC900AFADF5 /* Artista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Artista.m; path = Model/Artista.m; sourceTree = "<group>"; };
+		A7DBD5C01754CFC900AFADF5 /* Opera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Opera.h; path = Model/Opera.h; sourceTree = "<group>"; };
+		A7DBD5C11754CFC900AFADF5 /* Opera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Opera.m; path = Model/Opera.m; sourceTree = "<group>"; };
+		A7DBD5C41754D14600AFADF5 /* Esposizione.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Esposizione.h; path = Model/Esposizione.h; sourceTree = "<group>"; };
+		A7DBD5C51754D14600AFADF5 /* Esposizione.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Esposizione.m; path = Model/Esposizione.m; sourceTree = "<group>"; };
+		A7DBD5C71754D17E00AFADF5 /* Galleria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Galleria.h; path = Model/Galleria.h; sourceTree = "<group>"; };
+		A7DBD5C81754D17E00AFADF5 /* Galleria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Galleria.m; path = Model/Galleria.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +149,8 @@
 		A799C463173EDF390096164B = {
 			isa = PBXGroup;
 			children = (
+				A73E84D0175353F300FA27A6 /* NSString+MyStringCategory.h */,
+				A73E84D1175353F300FA27A6 /* NSString+MyStringCategory.m */,
 				A7A3E427174EB05000F41FB2 /* StringUtilities.xcodeproj */,
 				A799C475173EDF390096164B /* Versione1.0.0 */,
 				A799C46E173EDF390096164B /* Frameworks */,
@@ -164,6 +181,7 @@
 		A799C475173EDF390096164B /* Versione1.0.0 */ = {
 			isa = PBXGroup;
 			children = (
+				A7DBD5BD1754CF1300AFADF5 /* Model */,
 				A741C827174C14E400AAADD9 /* DAL */,
 				A799C49F173EE6FF0096164B /* img */,
 				A799C494173EE4A00096164B /* xib */,
@@ -247,6 +265,21 @@
 				A7A3E42C174EB05000F41FB2 /* libStringUtilities.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A7DBD5BD1754CF1300AFADF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7DBD5BE1754CFC900AFADF5 /* Artista.h */,
+				A7DBD5BF1754CFC900AFADF5 /* Artista.m */,
+				A7DBD5C01754CFC900AFADF5 /* Opera.h */,
+				A7DBD5C11754CFC900AFADF5 /* Opera.m */,
+				A7DBD5C41754D14600AFADF5 /* Esposizione.h */,
+				A7DBD5C51754D14600AFADF5 /* Esposizione.m */,
+				A7DBD5C71754D17E00AFADF5 /* Galleria.h */,
+				A7DBD5C81754D17E00AFADF5 /* Galleria.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +388,11 @@
 				A7A5208917481B4D007A4015 /* HomeViewController.m in Sources */,
 				A7C92682174A86E7009BB03B /* EsposizioniViewController.m in Sources */,
 				A741C82A174C155B00AAADD9 /* DALLayer.m in Sources */,
+				A73E84D2175353F300FA27A6 /* NSString+MyStringCategory.m in Sources */,
+				A7DBD5C21754CFC900AFADF5 /* Artista.m in Sources */,
+				A7DBD5C31754CFC900AFADF5 /* Opera.m in Sources */,
+				A7DBD5C61754D14600AFADF5 /* Esposizione.m in Sources */,
+				A7DBD5C91754D17E00AFADF5 /* Galleria.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

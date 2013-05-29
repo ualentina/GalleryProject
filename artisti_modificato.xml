@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artisti>
+	<artista id="1">
+		<nome>Pablo</nome>
+		<cognome>Picasso</cognome>
+		<immagine>cocci.png</immagine>
+		<!--questo <immagine>cocci.png</immagine> potresti anche scriverlo così 
+		<immagine src="cocci.png"/> in modo più sintetico, ma non è sbagliato
+		va bene anche così <immagine>cocci.png</immagine>-->
+		<data_nascita>23-05-1920</data_nascita>
+		<data_morte></data_morte>
+		<bio>Massimo 120 caratteri di biografia</bio>
+		<opere>
+			<opera id="1" id_esibizione="...."><!--aggiunto id_esibizione come attributo-->
+				<titolo>Titolo opera1</titolo>
+				<data_creazione>12-12-1949</data_creazione>
+				<id_esibizione></id_esibizione><!--id_esibizione si mette come attributo di opera-->
+				<img_small>cocci.png</img_small>
+				<!--<img_small>cocci.png</img_small> potresti anche scriverlo così 
+				<img_small src="cocci.png"/> in modo più sintetico stesso discorso di 
+				prima va bene anche <img_small>cocci.png</img_small>-->
+				<img_big>cocci.png</img_big><!--<img_big>cocci.png</img_big> come sopra-->
+			</opera>
+			<opera id="2">
+				<titolo>Titolo opera2</titolo>
+				<data_creazione>15-12-1949</data_creazione>
+				<id_esibizione></id_esibizione>
+				<img_small>cocci.png</img_small>
+				<img_big>cocci.png</img_big>
+			</opera>
+		</opere>
+	</artista>
+	<artista id="2">
+		<nome>Andy</nome>
+		<cognome>Wharik</cognome>
+		<immagine>cocci.png</immagine>
+		<data_nascita>23-05-1920</data_nascita>
+		<data_morte></data_morte>
+		<bio>Massimo 120 caratteri di biografia</bio>
+		<opere>
+			<opera id="1">
+				<titolo>Titolo opera1</titolo>
+				<data_creazione>12-12-1949</data_creazione>
+				<id_esibizione></id_esibizione>
+				<img_small>cocci.png</img_small>
+				<img_big>cocci.png</img_big>
+			</opera>
+			<opera id="2">
+				<titolo>Titolo opera2</titolo>
+				<data_creazione>15-12-1949</data_creazione>
+				<id_esibizione></id_esibizione>
+				<img_small>cocci.png</img_small>
+				<img_big>cocci.png</img_big>
+			</opera>
+		</opere>
+	</artista>
+</artisti>
